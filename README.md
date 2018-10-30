@@ -1,4 +1,4 @@
-# phaser-tilemap-plus [![Build Status](https://travis-ci.org/colinvella/phaser-tilemap-plus.svg?branch=master)](https://travis-ci.org/colinvella/phaser-tilemap-plus)
+# phaser-tilemap-plus [![Build Status](https://travis-ci.org/blackjack26/phaser-tilemap-plus.svg?branch=master)](https://travis-ci.org/blackjack26/phaser-tilemap-plus)
 
 A [Phaser](http://phaser.io) game framework plugin that implements tile animation, sloped tile physics, events and custom property enhancements for tilemaps loaded from [Tiled](http://www.mapeditor.org) JSON map files within the [Phaser](http://phaser.io) game framework.
 
@@ -58,11 +58,7 @@ For a complete working example, check out the source code of the [demo game](htt
 Within the `create()` function or method of your game state, add the plugin to the Phaser framework. If you have multiple states, this can be done in your booting state.
 
 ```js
-  game.plugins.add(Phaser.Plugin.TilemapPlus); // ES5  
-```
-or
-```es6
-  this.game.plugins.add(Phaser.Plugin.TilemapPlus); // ES6 if create() is a method override
+  game.plugins.installScenePlugin( 'TilemapPlusPlugin', Phaser.Plugins.TilemapPlus, 'tilemapplus' );
 ```
 
 Load the tilemap and corresponding tilemap layers as you normally would. The plugin will transparently enhance the tilemap to support the additional features.
