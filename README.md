@@ -1,6 +1,6 @@
-# phaser-tilemap-plus [![Build Status](https://travis-ci.org/blackjack26/phaser-tilemap-plus.svg?branch=master)](https://travis-ci.org/blackjack26/phaser-tilemap-plus)
+# phaser3-tilemap-plus [![Build Status](https://travis-ci.org/blackjack26/phaser-tilemap-plus.svg?branch=master)](https://travis-ci.org/blackjack26/phaser-tilemap-plus)
 
-A [Phaser](http://phaser.io) game framework plugin that implements tile animation, sloped tile physics, events and custom property enhancements for tilemaps loaded from [Tiled](http://www.mapeditor.org) JSON map files within the [Phaser](http://phaser.io) game framework.
+A [Phaser 3](http://phaser.io) game framework plugin that implements tile animation, sloped tile physics, events and custom property enhancements for tilemaps loaded from [Tiled](http://www.mapeditor.org) JSON map files within the [Phaser](http://phaser.io) game framework.
 
 **Check out the interactive [demo](https://colinvella.github.io/phaser-tilemap-plus-demo/)**. :video_game:
 
@@ -25,7 +25,7 @@ When exporting a Tiled map to JSON format for use with the library, make sure to
 
 ## Installation :hammer:
 ```shell
-npm install phaser-tilemap-plus -S
+npm install phaser3-tilemap-plus -S
 ```
 
 ## Code Import
@@ -33,7 +33,7 @@ There are several options for importing the code
 
 ### Modular
 ```js
-require("phaser-tilemap-plus"); // ES5 require() function
+require("phaser3-tilemap-plus"); // ES5 require() function
 ```
 or
 ```es6
@@ -42,12 +42,12 @@ import "phaser-tilemap-plus"; // ES6 import keyword
 
 ### Script Reference
 If you're not working in a NodeJS environment, copy the distribution script phaser-tilemap-plus.js from the
-[latest release](https://github.com/colinvella/phaser-tilemap-plus/releases)
+[latest release](https://github.com/blackjack26/phaser-tilemap-plus/releases)
 and include it after Phaser.
 
 ```html
 <script src="phaser.min.js"></script>
-<script src="phaser-tilemap-plus.js"></script>
+<script src="phaser3-tilemap-plus.js"></script>
 ```
 
 ## Usage :book:
@@ -256,8 +256,8 @@ tilemap.plus.events.regions.onLeaveRemove(player, playerOutside);
 ## Further Information :point_left:
 
 If you find bugs within the plugin or need help to incorporate it in your game, please raise an
-[issue](https://github.com/colinvella/phaser-tilemap-plus/issues/new) on
-[GitHub](https://github.com/colinvella/phaser-tilemap-plus). I will try to help you out as best
+[issue](https://github.com/blackjack26/phaser-tilemap-plus/issues/new) on
+[GitHub](https://github.com/blackjack26/phaser-tilemap-plus). I will try to help you out as best
 as I can.
 
 ## Thanks :heart:

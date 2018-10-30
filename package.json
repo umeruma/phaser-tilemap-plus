@@ -1,8 +1,8 @@
 {
-  "name": "phaser-tilemap-plus",
-  "version": "0.11.0",
+  "name": "phaser3-tilemap-plus",
+  "version": "0.1.0",
   "description": "Tilemap animations, physics, events and custom property enhancements for Tiled JSON map files",
-  "main": "dist/phaser-tilemap-plus.js",
+  "main": "dist/phaser3-tilemap-plus.js",
   "scripts": {
     "build": "webpack -p",
     "dev": "webpack -d",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/colinvella/phaser-tilemap-plus.git"
+    "url": "git+https://github.com/blackjack26/phaser-tilemap-plus.git"
   },
   "keywords": [
     "phaser",
@@ -22,12 +22,12 @@
     "properties",
     "game"
   ],
-  "author": "Colin Vella <colinvella@gmail.com> (https://github.com/colinvella)",
+  "author": "Jack Grzechowiak <johngrzehowiak@gmail.com> (https://github.com/blackjack26)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/colinvella/phaser-tilemap-plus/issues"
+    "url": "https://github.com/blackjack26/phaser-tilemap-plus/issues"
   },
-  "homepage": "https://github.com/colinvella/phaser-tilemap-plus#readme",
+  "homepage": "https://github.com/blackjack26/phaser-tilemap-plus#readme",
   "dependencies": {
     "lodash": "^4.17.11",
     "phaser": "^3.15.1",
