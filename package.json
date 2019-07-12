@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/blackjack26/phaser-tilemap-plus.git"
+    "url": "git+https://github.com/umeruma/phaser-tilemap-plus.git"
   },
   "keywords": [
     "phaser",
