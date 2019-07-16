@@ -1,6 +1,7 @@
 import TilemapPlus from './tilemap-plus/TilemapPlus';
 import TilemapLayerPlus from './tilemap-plus/TilemapLayerPlus';
 import TilesetPlus from './tilemap-plus/TilesetPlus';
+import SpritePlus from "./tilemap-plus/SpritePlus";
 
 var TilemapPlusPlugin = function( scene, pluginManager ) {
   this.scene = scene;
@@ -43,6 +44,13 @@ var TilemapPlusPlugin = function( scene, pluginManager ) {
     return image;
   };
 
+  const originalSpriteFactory = this.scene.physics.add.sprite;
+  this.scene.physics.add.sprite = function(x, y, key, frame, group) {
+      const sprite = originalSpriteFactory.call(this, x, y, key, frame, group);
+      sprite.plus = new SpritePlus(sprite);
+      return sprite;
+  };
+
   function jsonKey( key ) {
     return key + "-TilemapPlus";
   }
@@ -57,7 +65,7 @@ TilemapPlusPlugin.prototype = {
 
     eventEmitter.on( 'start', this.start, this );
 
-    eventEmitter.on( 'preupdate', this.preUpdate, this ); 
+    eventEmitter.on( 'preupdate', this.preUpdate, this );
     eventEmitter.on( 'update', this.update, this );
     eventEmitter.on( 'postupdate', this.postUpdate, this );
 
@@ -117,7 +125,7 @@ TilemapPlusPlugin.prototype = {
     this.shutdown();
 
     this.scene = undefined;
-  } 
+  }
 
 };
 
